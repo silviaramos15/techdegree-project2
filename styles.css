@@ -1,0 +1,211 @@
+/* Styles to use------ 
+background-color: #F8F8FF;
+font-family for h1-h6: 'Open Sans', sans-serif;
+font-family for paragraphs: 'Roboto', sans-serif;
+*/
+
+/* ------ General Styles ------ */
+* {
+    box-sizing: border-box;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-color: #f8f8ff;
+    font-family: 'Roboto', sans-serif;
+}
+h1,
+h2 {
+    font-family: 'Open Sans', sans-serif; 
+    text-align: center;
+}
+.wrap {
+    max-width: 85%;
+    margin: 0 auto;
+}
+a {
+   text-decoration: none;
+   color: #000; 
+}
+
+a:hover {
+    background-color: #FFFAFA;
+}
+img {
+    max-width: 100%;
+}
+
+/* ------ NAVIGATION ------- */
+nav {
+    text-align: center;
+}
+nav li {
+background-color: #ffff;
+display: block;
+margin: 0 auto;
+margin-bottom: 8px;
+font-weight: 700;
+text-transform: uppercase;
+}
+nav a {
+    padding: 12px 15px;
+    display: block;
+}
+
+/* ------ SECTIONS ------- */
+.information > h2,
+.portfolio > h2:first-child {
+    text-transform: uppercase;
+}
+
+.presentation {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.portfolio {
+    margin-top: 50px;
+    padding: 15px 20px;
+    margin-bottom: 50px;
+    background-color: #ffff;
+}
+article {
+    margin-bottom: 40px;
+}
+section img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    max-width: 80%;
+}
+section p {
+    text-align: center;
+    line-height: 1.4em;
+}
+.information {
+    padding-bottom: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* -------  FOOTER ------ */
+footer {
+    font-weight: 700;
+    border-top: 1px solid #C0C0C0;
+    padding: 25px 0;
+}
+footer a {
+    padding: 2px 8px;
+    
+}
+.footer-nav {
+    display: none;
+}
+.mobile-link {
+    float: right;
+    text-transform: uppercase;
+}
+
+
+
+
+/* -------  Media Queries Tablet ------ */
+@media (min-width: 768px){
+    .wrap,
+    footer {
+        max-width: 95%;
+    }
+    /* Navigation */
+nav ul li {
+    display: inline-block;
+    width: 20%;
+}
+
+  /* Sections */
+  .presentation img{
+    padding-left: 80px;
+}
+.presentation p {
+    float: left;
+    width: 60%;
+    padding-top: 35px;
+    padding-right: 30px;
+    text-align: left;
+}
+.presentation > img {
+    float: right;
+    width: 40%;
+}
+.marketing,
+.travel,
+.gallery {
+    float: left;
+    width: 50%;
+   
+}
+.search,
+.map,
+.calculator {
+    float: right;
+    width: 50%;
+ 
+}
+.portfolio  p {
+    width: 80%;
+    margin: 0 auto;
+}
+.information {
+    width: 60%;
+}
+/* Footer */
+.mobile-link {
+    display: none;
+}
+.footer-nav {
+    display: block;
+    float:right;
+    text-transform: uppercase;
+}
+footer ul li  {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+}
+
+
+
+
+/* ------ Media Queries Desktop ------ */
+@media (min-width: 1024px){
+   
+   /* Navigation */
+   nav > h1 {
+       float: left;
+   }
+   nav ul li {
+       float: right;
+       width: 12%;
+       margin-top: 20px;
+       margin-left: 5px;
+   }
+  /* Sections */
+  .marketing,
+.travel,
+.gallery {
+    
+    width: 33.33%;
+}
+.search,
+.map,
+.calculator {
+    
+    width: 33.33%;
+}
+  
+}
