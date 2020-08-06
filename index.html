@@ -2,26 +2,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    
     <title>Student's Portfolio</title>
   </head>
 
-  <body class="wrap">
-    <header>
+  <body>
+    <header role="banner">
         <nav class="clearfix" role="navigation">
             <h1>Student Name</h1>
             <ul class="clearfix">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
             </ul>
-        </nav>
+        </nav> 
     </header>
 
-    <main>
-        <section class="presentation clearfix">
+    <main class="wrap" role="main">
+        <section id="home" class="presentation clearfix">
             <img src="images/responsive-layout-profile.png" alt="Profile picture" title="Student">
             <p>Hi! I'm front-end developer who loves responsive design and css. I 
                 recently finished learning front-end web development at Treehouse and am
@@ -29,7 +32,7 @@
             </p>
         </section>
 
-        <section class="portfolio clearfix">
+        <section id="portfolio" class="portfolio clearfix">
                 <h2>Portfolio</h2>
 
                 <article class="marketing">
@@ -80,27 +83,39 @@
                     </p>
                 </article>
 
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Animations</li>
+                <li>Responsive Layout</li>
+            </ul>
 
         </section>
 
-        <section class="information">
+        <section id="contact" class="information">
             <h2>Contact</h2><br>
             <p>If you're interested in chatting or want more information about what I've been
                 working on, I'd love to hear from you!
             </p>
             <p>Phone &nbsp; <strong>+1(111)555-1234</strong></p>
-            <p>Email &nbsp; <strong>email@yoursite.com</strong></p>
+            <p>Email &nbsp;<a href="mailto:emai@yoursite.com"> <strong>email@yoursite.com</strong></a></p>
         </section>
             
     </main>
 
-    <footer>
+    <footer role="contentinfo">
             <span>Student Name</span>
-            <a href="#" class="mobile-link">Back to top</a>
+            <a href="#home" class="mobile-link">Back to top</a>
             <ul class="footer-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
             </ul>
 
     </footer>

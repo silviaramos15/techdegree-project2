@@ -1,5 +1,10 @@
 /* Styles to use------ 
 background-color: #F8F8FF;
+background-color: #B0C4DE;
+background-color header: #B0C4DE;
+borders: #c4d3e6; 
+h1-h6 color: #778899;
+links color: #c4d3e6;
 font-family for h1-h6: 'Open Sans', sans-serif;
 font-family for paragraphs: 'Roboto', sans-serif;
 */
@@ -23,6 +28,9 @@ h2 {
     font-family: 'Open Sans', sans-serif; 
     text-align: center;
 }
+h1 {
+    color: #778899;
+}
 .wrap {
     max-width: 85%;
     margin: 0 auto;
@@ -32,27 +40,31 @@ a {
    color: #000; 
 }
 
-a:hover {
-    background-color: #FFFAFA;
+nav a:hover {
+    background-color: #c4d3e6;
 }
 img {
     max-width: 100%;
 }
 
 /* ------ NAVIGATION ------- */
+header {
+    background-color: #B0C4DE;
+    padding-top: 8px;
+}
 nav {
     text-align: center;
+    margin: 0 auto;
+    
 }
 nav li {
-background-color: #ffff;
-display: block;
+border-bottom: 1px solid #c4d3e6;
 margin: 0 auto;
-margin-bottom: 8px;
 font-weight: 700;
 text-transform: uppercase;
 }
 nav a {
-    padding: 12px 15px;
+    padding: 20px 15px;
     display: block;
 }
 
@@ -65,13 +77,18 @@ nav a {
 .presentation {
     width: 85%;
     margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid #c4d3e6;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio {
     margin-top: 50px;
     padding: 15px 20px;
     margin-bottom: 50px;
-    background-color: #ffff;
+    background-color: #c4d3e6;
+    border-radius: 2%;
 }
 article {
     margin-bottom: 40px;
@@ -92,16 +109,47 @@ section p {
     width: 80%;
     margin: 0 auto;
 }
+.information a {
+    text-align: center;
+    display: inline-block;
+}
+
+/* ------ ADDITIONAL CONTENT ------ */
+.skills {
+    max-width: 85%;
+    margin: 0 auto;
+    border: 1px solid #c4d3e6;
+    border-radius: 2%;
+}
+.skills ul {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+   
+}
+.skills ul li {
+    display: inline-block;
+    background-color:  #ebf0f7;
+    padding: 3px 10px;
+    margin: 5px;
+}
 
 /* -------  FOOTER ------ */
+
 footer {
+    max-width: 85%;
+    margin: 0 auto;
     font-weight: 700;
-    border-top: 1px solid #C0C0C0;
+    border-top: 1px solid #c4d3e6;
     padding: 25px 0;
 }
 footer a {
     padding: 2px 8px;
     
+}
+footer a:hover,
+.information a:hover {
+    color: #B0C4DE;
 }
 .footer-nav {
     display: none;
@@ -111,56 +159,83 @@ footer a {
     text-transform: uppercase;
 }
 
-
+span {
+    color: #778899;
+}
 
 
 /* -------  Media Queries Tablet ------ */
 @media (min-width: 768px){
     .wrap,
     footer {
-        max-width: 95%;
+        width: 95%;
     }
     /* Navigation */
+    nav {
+        max-width: 85%;
+    }
 nav ul li {
     display: inline-block;
-    width: 20%;
+   
 }
-
+nav a {
+    padding: 10px 25px;
+    display: block;
+    border-left: 1px solid #c4d3e6;
+}
+nav li {
+    border-bottom: none;
+    
+}
   /* Sections */
   .presentation img{
-    padding-left: 80px;
+    padding: 0 30px 40px 80px;
 }
 .presentation p {
     float: left;
     width: 60%;
-    padding-top: 35px;
-    padding-right: 30px;
+    padding: 35px 30px;
     text-align: left;
 }
 .presentation > img {
     float: right;
     width: 40%;
 }
-.marketing,
-.travel,
-.gallery {
+
+.portfolio article {
+    width: 50%;
     float: left;
-    width: 50%;
-   
-}
-.search,
-.map,
-.calculator {
-    float: right;
-    width: 50%;
- 
 }
 .portfolio  p {
     width: 80%;
     margin: 0 auto;
 }
+
+section img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    max-width: 90%;
+}
 .information {
     width: 60%;
+    margin-top: 80px;
+}
+
+.skills {
+    max-width: 70%;
+    border: none;
+   
+}
+.skills h2 {
+    float: left;
+    margin: 0;
+}
+
+.skills ul li {
+    background-color:#F8F8FF;
+    border-left: 1px solid #c4d3e6;
 }
 /* Footer */
 .mobile-link {
@@ -188,24 +263,26 @@ footer ul li  {
    nav > h1 {
        float: left;
    }
-   nav ul li {
+   nav ul  {
        float: right;
-       width: 12%;
-       margin-top: 20px;
-       margin-left: 5px;
+   
    }
+   nav ul li {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+
   /* Sections */
-  .marketing,
-.travel,
-.gallery {
-    
+
+.portfolio article {
     width: 33.33%;
-}
-.search,
-.map,
-.calculator {
     
-    width: 33.33%;
 }
-  
+
+.skills {
+    max-width: 55%;
+    border: none;
+   
+}
 }
